@@ -1,0 +1,33 @@
+**************************************************************************************************************
+The application with TCP protocol has been developed using a tutorial from WittCode (youtube channel : https://www.youtube.com/channel/UCJnCCO9QVAP9saemgZ9tpoQ)
+video link : https://youtu.be/gLfuZrrfKes
+upload date : August 17th 2021
+watch date November 21st 2021
+**************************************************************************************************************
+
+
+**************************************************************************************************************
+To execute the server and create client for the chat application using TCP protocol, first compile the files from the src repository as follows :
+javac stream/ClientManager.java
+javac stream/Server.java
+javac stream/Client.java
+javac View/ChatRoomView.java
+
+Then execute the server with a port number (ex : 1234) : 
+java stream.Server <port>
+example : java stream.Server 1234
+
+Then execute as many clients as wanted with the IP address and port of the server (ex : localhost 1234) :
+java stream.Client <address> <port>
+example : java stream.Client localhost 1234
+**************************************************************************************************************
+
+
+**************************************************************************************************************
+To execute the application using the UDP protocol, compile and execute from the src repository as follows :
+javac UDP/ClientUDP.java
+javac View/ChatRoomUDPView.java
+
+Then execute (creates a client) as follows :
+java UDP.ClientUDP
+**************************************************************************************************************
